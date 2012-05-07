@@ -14,8 +14,8 @@ from forms_builder.forms import settings
 STATUS_DRAFT = 1
 STATUS_PUBLISHED = 2
 STATUS_CHOICES = (
-    (STATUS_DRAFT, "Draft"),
-    (STATUS_PUBLISHED, "Published"),
+    (STATUS_DRAFT, _("Draft")),
+    (STATUS_PUBLISHED, _("Published")),
 )
 
 sites_field = None
