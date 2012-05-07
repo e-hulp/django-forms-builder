@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-forms-builder\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-12 14:14+0200\n"
+"POT-Creation-Date: 2012-05-07 14:40+0200\n"
 "PO-Revision-Date: 2011-10-12 14:38+0100\n"
 "Last-Translator: Sindre Sorhus <sindresorhus@gmail.com>\n"
 "Language-Team:  <sindresorhus@gmail.com>\n"
@@ -19,74 +19,82 @@ msgstr ""
 "X-Poedit-Country: NORWAY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: admin.py:28
-#: fields.py:27
+#: admin.py:30 fields.py:29
 msgid "Email"
 msgstr "E-post"
 
-#: admin.py:32
+#: admin.py:34
 msgid "Sites"
 msgstr "Sider"
 
-#: admin.py:114
+#: admin.py:41
+msgid "Ordering"
+msgstr ""
+
+#: admin.py:140
 #, python-format
 msgid "1 entry deleted"
 msgid_plural "%(count)s entries deleted"
 msgstr[0] "Slettet ett innlegg"
 msgstr[1] "Slettet %(count)s innlegg"
 
-#: admin.py:119
+#: admin.py:144
 msgid "View Entries"
 msgstr "Vis innlegg"
 
-#: fields.py:25
+#: fields.py:27
 msgid "Single line text"
 msgstr "Tekstfelt"
 
-#: fields.py:26
+#: fields.py:28
 msgid "Multi line text"
 msgstr "Tekstområde"
 
-#: fields.py:28
+#: fields.py:30
+msgid "Number"
+msgstr ""
+
+#: fields.py:31
+msgid "URL"
+msgstr ""
+
+#: fields.py:32
 msgid "Check box"
 msgstr "Avmerkingsboks"
 
-#: fields.py:29
+#: fields.py:33
 msgid "Check boxes"
 msgstr "Avmerkingsbokser"
 
-#: fields.py:30
+#: fields.py:34
 msgid "Drop down"
 msgstr "Rullegardinmeny"
 
-#: fields.py:31
+#: fields.py:35
 msgid "Multi select"
 msgstr "Flervalgmeny"
 
-#: fields.py:32
+#: fields.py:36
 msgid "Radio buttons"
 msgstr "Radioknapp"
 
-#: fields.py:33
+#: fields.py:37
 msgid "File upload"
 msgstr "Filopplasting"
 
-#: fields.py:34
+#: fields.py:38
 msgid "Date"
 msgstr "Dato"
 
-#: fields.py:35
-#: models.py:210
+#: fields.py:39 models.py:211
 msgid "Date/time"
 msgstr "Dato/tid"
 
-#: fields.py:36
+#: fields.py:40
 msgid "Hidden"
 msgstr "Skjult"
 
-#: forms.py:27
-#: forms.py:35
-#: forms.py:41
+#: forms.py:27 forms.py:35 forms.py:41
 msgid "Nothing"
 msgstr "Ingenting"
 
@@ -98,13 +106,11 @@ msgstr "Inneholder"
 msgid "Doesn't contain"
 msgstr "Inneholder ikke"
 
-#: forms.py:30
-#: forms.py:36
+#: forms.py:30 forms.py:36
 msgid "Equals"
 msgstr "Er lik"
 
-#: forms.py:31
-#: forms.py:37
+#: forms.py:31 forms.py:37
 msgid "Doesn't equal"
 msgstr "Er ikke lik"
 
@@ -120,10 +126,18 @@ msgstr "Valgt"
 msgid "Not checked"
 msgstr "Ikke valgt"
 
-#: forms.py:179
-#: forms.py:194
+#: forms.py:179 forms.py:194
 msgid "and"
 msgstr "og"
+
+#: models.py:17
+msgid "Draft"
+msgstr ""
+
+#: models.py:18
+#, fuzzy
+msgid "Published"
+msgstr "Publisert fra"
 
 #: models.py:54
 msgid "Title"
@@ -213,123 +227,125 @@ msgstr "Skjema"
 msgid "Forms"
 msgstr "Skjemaer"
 
-#: models.py:123
+#: models.py:115
+#, fuzzy
+msgid "Total entries"
+msgstr "Skjema innlegg"
+
+#: models.py:124
 msgid "View form on site"
 msgstr "Vis skjema på siden"
 
-#: models.py:124
-#: templates/admin/forms/change_form.html:8
-#: templates/admin/forms/entries.html:119
+#: models.py:125 templates/admin/forms/change_form.html:9
+#: templates/admin/forms/entries.html:116
 msgid "View entries"
 msgstr "Vis innlegg"
 
-#: models.py:144
+#: models.py:145
 msgid "Placeholder Text"
 msgstr "Plassholdertekst"
 
-#: models.py:151
+#: models.py:152
 msgid "Label"
 msgstr "Etikett"
 
-#: models.py:152
+#: models.py:153
 msgid "Type"
 msgstr "Type"
 
-#: models.py:153
+#: models.py:154
 msgid "Required"
 msgstr "Påkrevd"
 
-#: models.py:154
+#: models.py:155
 msgid "Visible"
 msgstr "Synlig"
 
-#: models.py:155
+#: models.py:156
 msgid "Choices"
 msgstr "Valg"
 
-#: models.py:160
+#: models.py:161
 msgid "Default value"
 msgstr "Standard verdi"
 
-#: models.py:163
+#: models.py:164
 msgid "Help text"
 msgstr "Hjelpetekst"
 
-#: models.py:168
-#: templates/admin/forms/entries.html:90
+#: models.py:169 templates/admin/forms/entries.html:87
 msgid "Field"
 msgstr "Felt"
 
-#: models.py:169
+#: models.py:170
 msgid "Fields"
 msgstr "Felter"
 
-#: models.py:213
+#: models.py:214
 msgid "Form entry"
 msgstr "Skjemautfylling"
 
-#: models.py:214
+#: models.py:215
 msgid "Form entries"
 msgstr "Skjema innlegg"
 
-#: models.py:226
+#: models.py:227
 msgid "Form field entry"
 msgstr "Skjemafelt oppføring"
 
-#: models.py:227
+#: models.py:228
 msgid "Form field entries"
 msgstr "Skjemafeltoppføringer"
 
-#: templates/admin/forms/change_form.html:9
+#: templates/admin/forms/change_form.html:12
 msgid "History"
 msgstr "Historie"
 
-#: templates/admin/forms/change_form.html:10
+#: templates/admin/forms/change_form.html:16
 msgid "View on site"
 msgstr "Vis på siden"
 
-#: templates/admin/forms/entries.html:63
+#: templates/admin/forms/entries.html:61
 msgid "No entries selected"
 msgstr "Ingen innlegg er valgt"
 
-#: templates/admin/forms/entries.html:66
+#: templates/admin/forms/entries.html:64
 msgid "Delete selected entries?"
 msgstr "Slett valgte innlegg?"
 
-#: templates/admin/forms/entries.html:76
+#: templates/admin/forms/entries.html:73
 msgid "Home"
 msgstr "Hjem"
 
-#: templates/admin/forms/entries.html:91
+#: templates/admin/forms/entries.html:88
 msgid "Include"
 msgstr "Inkluder"
 
-#: templates/admin/forms/entries.html:92
+#: templates/admin/forms/entries.html:89
 msgid "Filter by"
 msgstr "Filtrer etter"
 
-#: templates/admin/forms/entries.html:110
+#: templates/admin/forms/entries.html:107
 msgid "All"
 msgstr "Alle"
 
-#: templates/admin/forms/entries.html:118
-#: templates/admin/forms/entries.html:151
+#: templates/admin/forms/entries.html:115
+#: templates/admin/forms/entries.html:155
 msgid "Back to form"
 msgstr "Tilbake til skjemaet"
 
-#: templates/admin/forms/entries.html:120
+#: templates/admin/forms/entries.html:117
 msgid "Export CSV"
 msgstr "Exporter CSV"
 
-#: templates/admin/forms/entries.html:123
+#: templates/admin/forms/entries.html:120
 msgid "Entries"
 msgstr "Innlegg"
 
-#: templates/admin/forms/entries.html:152
+#: templates/admin/forms/entries.html:156
 msgid "Delete selected"
 msgstr "Slett valgte"
 
-#: templates/admin/forms/entries.html:156
+#: templates/admin/forms/entries.html:160
 msgid "No entries to display"
 msgstr "Ingen innlegg å vise"
-

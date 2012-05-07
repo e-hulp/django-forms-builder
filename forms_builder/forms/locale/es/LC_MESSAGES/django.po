@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-27 20:19-0500\n"
+"POT-Creation-Date: 2012-05-07 14:40+0200\n"
 "PO-Revision-Date: 2011-11-28 19:07-0500\n"
 "Last-Translator: \n"
 "Language-Team: diegeus9 <diego@diegue.us>\n"
@@ -17,21 +17,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Generator: Lokalize 1.2\n"
 
-#: admin.py:29 fields.py:29
+#: admin.py:30 fields.py:29
 msgid "Email"
 msgstr "Email"
 
-#: admin.py:33
+#: admin.py:34
 msgid "Sites"
 msgstr "Sitios"
 
-#: admin.py:117
+#: admin.py:41
+msgid "Ordering"
+msgstr ""
+
+#: admin.py:140
 #, python-format
 msgid "1 entry deleted"
 msgid_plural "%(count)s entries deleted"
 msgstr[0] "%(count)s entries deleted"
 
-#: admin.py:121
+#: admin.py:144
 msgid "View Entries"
 msgstr "Ver entradas"
 
@@ -79,7 +83,7 @@ msgstr "Carga de archivo"
 msgid "Date"
 msgstr "Fecha"
 
-#: fields.py:39 models.py:210
+#: fields.py:39 models.py:211
 msgid "Date/time"
 msgstr "Fecha/Hora"
 
@@ -122,6 +126,15 @@ msgstr "No comprobado"
 #: forms.py:179 forms.py:194
 msgid "and"
 msgstr "y"
+
+#: models.py:17
+msgid "Draft"
+msgstr ""
+
+#: models.py:18
+#, fuzzy
+msgid "Published"
+msgstr "Pulbicado a partir de"
 
 #: models.py:54
 msgid "Title"
@@ -216,122 +229,125 @@ msgstr "Formulario"
 msgid "Forms"
 msgstr "Formularios"
 
-#: models.py:123
+#: models.py:115
+#, fuzzy
+msgid "Total entries"
+msgstr "Entradas de Formulario"
+
+#: models.py:124
 msgid "View form on site"
 msgstr "Ver formulario en el sitio"
 
-#: models.py:124 templates/admin/forms/change_form.html:8
-#: templates/admin/forms/entries.html:119
+#: models.py:125 templates/admin/forms/change_form.html:9
+#: templates/admin/forms/entries.html:116
 msgid "View entries"
 msgstr "Ver entradas"
 
-#: models.py:144
+#: models.py:145
 msgid "Placeholder Text"
 msgstr "Texto inicial"
 
-#: models.py:151
+#: models.py:152
 msgid "Label"
 msgstr "Etiqueta"
 
-#: models.py:152
+#: models.py:153
 msgid "Type"
 msgstr "Tipo"
 
-#: models.py:153
+#: models.py:154
 msgid "Required"
 msgstr "Requerido"
 
-#: models.py:154
+#: models.py:155
 msgid "Visible"
 msgstr "Visible"
 
-#: models.py:155
+#: models.py:156
 msgid "Choices"
 msgstr "Opciones"
 
-#: models.py:160
+#: models.py:161
 msgid "Default value"
 msgstr "Valor por omisión"
 
-#: models.py:163
+#: models.py:164
 msgid "Help text"
 msgstr "Texto de ayuda"
 
-#: models.py:168 templates/admin/forms/entries.html:90
+#: models.py:169 templates/admin/forms/entries.html:87
 msgid "Field"
 msgstr "Campo"
 
-#: models.py:169
+#: models.py:170
 msgid "Fields"
 msgstr "Campos"
 
-#: models.py:213
+#: models.py:214
 msgid "Form entry"
 msgstr "Entrada de Formulario"
 
-#: models.py:214
+#: models.py:215
 msgid "Form entries"
 msgstr "Entradas de Formulario"
 
-#: models.py:226
+#: models.py:227
 msgid "Form field entry"
 msgstr "Entrada de campo de formulario"
 
-#: models.py:227
+#: models.py:228
 msgid "Form field entries"
 msgstr "Entradas de campo de formulario"
 
-#: templates/admin/forms/change_form.html:9
+#: templates/admin/forms/change_form.html:12
 msgid "History"
 msgstr "Historia"
 
-#: templates/admin/forms/change_form.html:10
+#: templates/admin/forms/change_form.html:16
 msgid "View on site"
 msgstr "Ver en el sitio"
 
-#: templates/admin/forms/entries.html:63
+#: templates/admin/forms/entries.html:61
 msgid "No entries selected"
 msgstr "Ninguna entrada seleccionada"
 
-#: templates/admin/forms/entries.html:66
+#: templates/admin/forms/entries.html:64
 msgid "Delete selected entries?"
 msgstr "Eliminar las entradas seleccionadas?"
 
-#: templates/admin/forms/entries.html:76
+#: templates/admin/forms/entries.html:73
 msgid "Home"
 msgstr "Inicio"
 
-#: templates/admin/forms/entries.html:91
+#: templates/admin/forms/entries.html:88
 msgid "Include"
 msgstr "Incluir"
 
-#: templates/admin/forms/entries.html:92
+#: templates/admin/forms/entries.html:89
 msgid "Filter by"
 msgstr "Filtrar"
 
-#: templates/admin/forms/entries.html:110
+#: templates/admin/forms/entries.html:107
 msgid "All"
 msgstr "Todos"
 
-#: templates/admin/forms/entries.html:118
-#: templates/admin/forms/entries.html:156
+#: templates/admin/forms/entries.html:115
+#: templates/admin/forms/entries.html:155
 msgid "Back to form"
 msgstr "Volver al formulario"
 
-#: templates/admin/forms/entries.html:120
+#: templates/admin/forms/entries.html:117
 msgid "Export CSV"
 msgstr "Exportar como CSV"
 
-#: templates/admin/forms/entries.html:123
+#: templates/admin/forms/entries.html:120
 msgid "Entries"
 msgstr "Entradas"
 
-#: templates/admin/forms/entries.html:157
+#: templates/admin/forms/entries.html:156
 msgid "Delete selected"
 msgstr "Eliminar seleccionados"
 
-#: templates/admin/forms/entries.html:161
+#: templates/admin/forms/entries.html:160
 msgid "No entries to display"
 msgstr "Ninguna entrada que mostrar"
-
-
