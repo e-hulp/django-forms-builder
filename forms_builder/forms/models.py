@@ -112,6 +112,7 @@ class AbstractForm(models.Model):
         """
         return self.total_entries
     total_entries.admin_order_field = "total_entries"
+    total_entries.short_description = _('Total entries')
 
     @models.permalink
     def get_absolute_url(self):
