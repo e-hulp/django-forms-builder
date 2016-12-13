@@ -231,7 +231,7 @@ msgstr "Totaal aantal inzendingen"
 
 #: models.py:124
 msgid "View form on site"
-msgstr "Bekijk op site"
+msgstr "Bekijk formulier op pagina"
 
 #: models.py:125 templates/admin/forms/change_form.html:9
 #: templates/admin/forms/entries.html:116
